@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+    /* border: 0; */
+}
+nav{
+    background: transparent !important;
+}
+.nav-image{
+    height: 50px;
+    width: 50px;
+}
+main{
+    height: 100vh;
+    /* background: rgba(0, 0, 0, 0.5) ,url(image/bg1.jpg); */
+    background: linear-gradient(rgba(17, 105, 64, 0.658),rgba(37, 105, 54, 0.562)),url(image/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    animation: bgchange 6s ease-out infinite forwards;
+    animation-direction: normal;
+    /* animation-fill-mode: ; */
+}
+
+@keyframes bgchange {
+    from{
+        background: linear-gradient(rgba(17, 105, 64, 0.658),rgba(37, 105, 54, 0.562)),url(image/bg2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    to{
+        background: linear-gradient(rgba(17, 105, 64, 0.658),rgba(37, 105, 54, 0.562)),url(image/bg1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+}
+.nav-item a{
+    color: white;
+}
+.btn-primar {
+    background: #B8860B !important;
+}
+button.active1,.but button,.form-but button{
+    background: #B8860B !important;
+    width: 190px;
+    height: 60px;
+    transition: .3s;
+}
+button.active1:hover,.but button:hover,.form-but button:hover{
+    background: #fff !important;
+    color: #B8860B !important;
+
+}
+button.active2{
+    background: #fff !important;
+    color: #B8860B !important;
+    width: 190px;
+    height: 60px;
+    transition: .3s;
+}
+button.active2:hover{
+    background: #B8860B !important;
+    color: #fff !important;
+}
+.main-body{
+    display: grid;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 60%;
+}
+.text h1{
+    font-size: 80px !important;
+}
+
+.aero-plane{
+   background: #B8860B; 
+   /* height: 80vh; */
+   
+}
+.image-plane{
+    width: 100vw;
+    
+ 
+    /* padding-top: -190px; */
+}
+.image-plane img{
+    width: 100%;
+    /* position: absolute; */
+    animation: upDown 3s ease-in-out infinite forwards;
+    transform: translateY(5px );
+    box-shadow: 0px 0px -5px -4px;
+}
+
+@keyframes upDown {
+    from{
+        transform: translateY(5px);
+    }
+   to{
+    transform: translateY(35px);
+   }
+}
+
+.box{
+    height: 200px;
+    width: 260px;
+    border: 1px solid white;
+    transition: .5s;
+    /* box-shadow: 0px 0px 5px 5px; */
+}
+.cla{
+    height: 220px;
+    width: 260px;
+}
+.box:hover{
+    background: #fff;
+    color: #B8860B !important;
+    border: 1px solid #B8860B;
+}
+.about-goflight{
+    /* height: 100vh; */
+    background: #B8860B;
+
+}
+.texte,.jet-image{
+    height: 400px;
+}
+
+
+/* sigin-for-jet */
+.signin-for-jet{
+    /* height: 100vh; */
+    background: #B8860B;
+}
+.form-input{
+    margin: auto;
+    /* width: 50%; */
+    height: 500px;
+}
+.sign-image{
+    width: 50%;
+}
+.info-one{
+    width: 100%;
+}
+.info-one input,.info-two input,.info-three select{
+    width: 260px;
+    height: 40px;
+    background: #eee;
+    border: none;
+    outline: none;
+    padding-left: 6px;
+    border-radius: 10px;
+}
+::placeholder{
+    text-align: left;
+    /* padding-right: 13px; */
+}
+
+/* services */
+.services{
+    /* height: 100vh; */
+    background: #B8860B;
+}
+.common-words{
+   
+    color: #B8860B;
+}
+.flight-for{
+    height: 390px;
+}
+
+.image-services{
+    /* width: 200px; */
+    height: 220px;
+}
+.image-services img{
+    height: 100%;
+    object-fit: contain;
+    transition: 3s;
+    /* object-fit: cover; */
+}
+.image-services img:hover{
+    object-fit: cover;
+}
+.box-service{
+    height: 160px;
+    width: 80%;
+    background: #fff;
+    width: 90%;
+    box-shadow: 1px 1px 15px 1px #B8860B;
+}
+.box-service p{
+    color: #B8860B;
+}
+
+/* Country being to */
+.country-content{
+   height: 80vh;
+   /* background: #000; */
+    background: #B8860B;
+
+}
+.country-spacing{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.country-number h3{
+    font-size: 70px !important;
+}
+.request button{
+    background: #fff !important;
+    color: #B8860B !important;
+    width: 190px;
+    height: 60px;
+    transition: .3s;
+}
+.req:hover{
+    background: #000 !important;
+    color: #B8860B !important;
+}
+
+/* REVIEWS */
+.review{
+    height: 80vh;
+    text-align: center;
+}
+.reviews p{
+    color: #B8860B;
+}
+
+.swiper {
+    width: 50%;
+    height: 50%;
+    padding: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+  }
+
+  .review-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .person-image{
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .person-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .person-review{
+    background: #B8860B;
+    height: 100%;
+    width: 70%;
+  }
+
+.subscribe{
+    height: 50vh;
+}
+.subscribe-input{
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: #000;
+}
+.subscribe-input input{
+    width: 80% !important;
+    height: 50px;
+    border: none;
+    outline: none;
+    /* border-radius: ; */
+}
+.subscribe-input button{
+    width: 150px;
+    height: 50px;
+    background: #000;
+    color: #fff !important;
+}
+.subscribe-input button:hover{
+    background: #B8860B;
+    /* color: dark !important; */
+}
+footer{
+    /* height: 70vh; */
+    background: #B8860B;
+}
+.footer-image{
+    height: 50px;
+    width: 50px;
+}
+.footer-image img{
+    height: 100%;
+    width: 100%;
+}
+/* footer{
+    width: 100%;
+} */
+@media (max-width:1024px) {
+    main{
+        height: 100vh;
+    }
+    .jet-image{
+        margin-bottom: 50px;
+    }
+    .jet-image img{
+        height: 100%;
+    }
+    .image-services img{
+        object-fit: cover;
+    }
+   
+}
+
+
+
+@media (max-width:767px) {
+    main{
+        height: 100vh;
+    }
+    button.active1,button.active2{
+        width: 136px;
+        height: 60px;
+    }
+    .text h1{
+        font-size: 60px !important;
+    }
+    .texte,.jet-image{
+        height: 300px;
+    }
+    .jet-image{
+        margin-top: 30px;
+    }
+    .sign-image img{
+        display: none;
+    }
+    .form-input{
+        width: 100%;
+    }
+    .info-one,.info-two,.info-three{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* padding-right: 30px; */
+    }
+    .info-one input,.info-two input,.info-three select{
+        width: 300px;
+    }
+    .image-services{
+        height: 250px;
+        width: 100%;
+    }
+    .image-services img{
+        object-fit: cover;
+    }
+   
+    .box-service{
+        width:90%;
+        /* margin-bottom: 20px; */
+    }
+    .flight-for{
+        margin-bottom: 30px;
+    }
+    .country-content{
+        height: 100vh;
+    }
+    .texte{
+        padding-right: 10px;
+    }
+    .signin-for-jet{
+      padding-top: 10px;
+    }
+    .country-number h3{
+        font-size: 40px !important;
+    }
+    .swiper {
+        width: 70%;
+        height: 70%;
+        padding: 50px;
+      }
+      
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 70%;
+  }
+  .one-review p{
+    font-size: 16px !important;
+  }
+  .stars{
+    justify-content: space-between;
+  }
+  .star{
+    display: flex;
+  }
+  .star i{
+    font-size: 10px;
+  }
+  .footer{
+    height: 100vh;
+  }
+}
